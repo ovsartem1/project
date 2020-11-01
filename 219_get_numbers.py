@@ -40,9 +40,9 @@ def get_happy_numbers(n: int) -> list:
         for prime in range(n + 1):
             if prime_flag[prime]:
                 primes.append(prime)
-        for q in primes:
-            if happy_numbers(q)==True:
-                happy.append(q)
+        for i in primes:
+            if happy_numbers(i)==True:
+                happy.append(i)
         return happy
     except TypeError:
         return None
